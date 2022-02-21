@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<style>
+    html{
+        height: 10px;
+    }
+    .box{
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+   .button {
+        bottom: 0;
+        padding: 2px 15px;
+        margin-bottom: 10px;
+    }
+    .fact-box {
+        margin-top: 15px;
+        font-family: cursive;
+        margin-bottom: 20px;
+        text-align: center;
+        padding: 0 5px;
+    }
+    .title{
+        margin-top: 20px;
+        text-align: center;
+        color: #dc3545;
+    }
+	#fact{
+		cursor:auto;
+	}
+</style>
+<body>
+    <div class="box">
+        <h5 class="title">Random Fact Generator</h5>
+        <div class="fact-box"><label id="fact">Generate a Random Fact</label></div>
+        <button type="button" class="btn btn-outline-danger button" id="button_generate">Random Fact</button>
+    </div>
+    <script type="text/javascript" src="scripts/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+</body>
+</html>

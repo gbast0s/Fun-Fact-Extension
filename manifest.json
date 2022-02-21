@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+    "name": "Random Fact Generator",
+    "description": "Generates a random fact from a database",
+    "version": "1.0",
+    "icons": {
+        "16": "/img/icon16.png",
+        "48": "/img/icon48.png",
+        "128": "/img/icon128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://*/*", "http://*/*"],
+            "js": ["/scripts/jquery-3.6.0.min.js", "/scripts/main.js"]
+        }
+    ],
+    "browser_action": {
+        "default_title": "Random Fact Generator",
+        "default_popup": "index.html",
+        "default_icon":{
+            "16": "/img/icon16.png",
+            "48": "/img/icon48.png",
+            "128": "/img/icon128.png"
+        }
+    }
+}
+
